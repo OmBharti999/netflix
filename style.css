@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=Mingzat&family=Playfair+Display:ital@1&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
+  /* background-color: rgb(65, 60, 60); */
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(65, 60, 60);
+  font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
+}
+
+.head-container {
+  background-image: url(Assets/Background.jpeg);
+
+  height: 800px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* for sign in and language and netflix logo */
+.headfirstdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/* first div starts */
+.logo {
+  width: auto;
+  height: 4.8rem;
+  padding-left: 2%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-side-logo {
+  display: flex;
+  column-gap: 5px;
+}
+.language-menu {
+  width: 80px;
+  font-weight: 500;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+  color: #333;
+  direction: ltr;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+/* logo submit button */
+.right-side-logo button {
+  font-size: 16px;
+  width: 80px;
+  font-weight: 600;
+  height: 30px;
+  margin: 20px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ends */
+
+/* middle of header startsssssss */
+
+.headseconddiv {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.upheadcontent {
+  font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
+  font-size: 47px;
+  font-weight: 900;
+  width: 38%;
+  text-align: center;
+}
+
+/* .upheadcontent h1 {
+  font-weight: 900;
+} */
+
+.middleheadcontent {
+  font-size: 25px;
+  width: 35%;
+  word-spacing: -7px;
+  text-align: center;
+  font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
+}
+
+.bottomheadcontent {
+  font-size: 1.3rem;
+  font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
+  word-spacing: -7px;
+  width: 65%;
+  text-align: center;
+}
+
+.search {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search input {
+  font-size: 1rem;
+  height: 100%;
+  width: 485px;
+}
+
+.search button {
+  height: 106%;
+  width: 200px;
+  font-size: 25px;
+  background-color: rgba(221, 27, 27);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.search button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* first section for tv */
+
+.padd {
+  padding-top: 4px;
+  background-color: grey;
+}
+.tv {
+  width: 100%;
+  height: 80vh;
+}
+
+.tv-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: black;
+  height: 100%;
+}
+
+.tv-text {
+  color: white;
+  margin: 20px;
+  padding-left: 60px;
+  word-spacing: -8px;
+  width: 90%;
+  /* font-size: 32px; */
+}
+
+.tv-text h1 {
+  font-size: 43px;
+}
+.tv-text p {
+  font-size: 23px;
+  word-spacing: -6px;
+  width: 80%;
+}
+
+.tv-display {
+  /* display: inline; */
+  margin-top: -550px;
+}
+
+.tv-display div {
+  position: absolute;
+}
+
+.videontv {
+  margin-left: 82px;
+  margin-top: 100px;
+}
+
+/* for second setion */
+
+.download {
+  background-color: grey;
+  /* padding-top: 4px; */
+  height: 80vh;
+  width: auto;
+}
+
+.down-div {
+  height: 100%;
+  width: 100vw;
+}
+
+.d-div {
+  width: 46%;
+  height: 80%;
+  text-align: center;
+}
+
+.bot-imge {
+  height: 100%;
+  width: 90%;
+  text-align: center;
+}
+.bot-imge img {
+  height: 100%;
+  width: 90%;
+}
+
+.down-div {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.mid-img {
+  display: flex;
+  /* height: 30px; */
+  position: absolute;
+  height: 13%;
+  width: 35%;
+
+  margin: 140px;
+  margin-top: -100px;
+}
+
+.download-showing {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 15px;
+  background-color: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+.download-showing div img {
+  margin: 4px;
+  width: 90%;
+  height: 90%;
+}
+
+p.blue-down {
+  color: rgba(68, 166, 190, 0.89);
+}
+
+.download-aside {
+  text-align: left;
+  width: 45vw;
+}
+.aside-h1 {
+  font-size: 7vh;
+  width: 100%;
+}
+
+.download-aside p {
+  font-size: 3.7vh;
+}
+
+/* third section starts */
+
+.monitorplay {
+  height: 80vh;
+  /* background-color: red; */
+  /* border: 4px solid red; */
+}
+
+.monitorplustext {
+  height: 100%;
+  /* width: 100%; */
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.monitor-text {
+  align-items: center;
+  padding-left: 20px;
+}
+.mon-text {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}
+.mon-text h1 {
+  font-size: 7vh;
+  font-weight: 700;
+}
+.mon-text p {
+  font-size: 3.6vh;
+  align-items: center;
+}
+.monitor {
+  display: flex;
+  align-items: center;
+}
+
+.monitor div {
+  position: absolute;
+}
+
+.monr-vid {
+  margin-left: 70px;
+  margin-bottom: 170px;
+  overflow: hidden;
+}
+.monr-img {
+  overflow: hidden;
+}
+
+/* section 4 */
+
+.section4 {
+  color: white;
+}
+
+.kid {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.khead {
+  font-size: 7vh;
+  font-weight: 700;
+}
+
+.kpara {
+  font-size: 3.6vh;
+  align-items: center;
+}
+
+/* section 5 */
+.fifsection {
+  color: white;
+  height: auto;
+}
+
+.fifcontainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+}
+.fifhead {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.quest {
+  background-color: grey;
+  padding: 10px;
+  font-size: 27px;
+  text-align: left;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+/* last input tray */
+
+.fif-bottom {
+  margin-top: 30px;
+}
+
+.gg {
+  font-size: 16px;
+}
+
+.fif-bottom {
+  text-align: center;
+}
+
+/* footer-------------- */
+
+.foot {
+  color: grey;
+  text-align: left;
+}
+
+.last-foot-conatiner {
+  background-color: black;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-for-questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fi-div {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+.menu2 {
+  height: 40px;
+}
+
+.cla {
+  padding-top: 20px;
+}
