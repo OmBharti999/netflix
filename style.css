@@ -10,6 +10,8 @@
 .body {
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgb(65, 60, 60);
   font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
 }
@@ -156,6 +158,7 @@
   align-items: center;
   background-color: black;
   height: 100%;
+  flex-wrap: wrap;
 }
 
 .tv-text {
@@ -182,25 +185,50 @@
 }
 
 .tv-display div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   position: absolute;
 }
 
 .videontv {
+  display: flex;
+  flex-direction: row;
+
+  align-self: center;
+  flex-wrap: wrap;
+  object-fit: contain;
   margin-left: 82px;
   margin-top: 100px;
 }
 
-/* for second setion */
+.img-tv-g {
+  display: flex;
+  height: 80%;
+}
+
+.img-tv-g img {
+  display: flex;
+  align-self: center;
+  height: 80%;
+}
+
+/* for second setion-------------------------------------------------------------------- */
 
 .download {
   background-color: grey;
   /* padding-top: 4px; */
-  height: 80vh;
+  min-height: 80vh;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .down-div {
-  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 99%;
   width: 100vw;
 }
 
@@ -211,11 +239,15 @@
 }
 
 .bot-imge {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
   height: 100%;
   width: 90%;
   text-align: center;
 }
 .bot-imge img {
+  display: flex;
   height: 100%;
   width: 90%;
 }
@@ -228,6 +260,7 @@
 }
 .mid-img {
   display: flex;
+  align-items: center;
   /* height: 30px; */
   position: absolute;
   height: 13%;
@@ -239,6 +272,7 @@
 
 .download-showing {
   display: flex;
+  align-self: center;
   border: 2px solid grey;
   border-radius: 15px;
   background-color: black;
@@ -271,55 +305,55 @@ p.blue-down {
 
 /* third section starts */
 
-.monitorplay {
-  height: 80vh;
-  /* background-color: red; */
-  /* border: 4px solid red; */
-}
-
 .monitorplustext {
-  height: 100%;
-  /* width: 100%; */
   background-color: black;
   color: white;
   display: flex;
-  align-items: center;
+  /* -----flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: center;
+  /* align-items: center; */
+  min-height: 600px;
 }
 .monitor-text {
+  /* font-size: large; */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 20px;
 }
 .mon-text {
+  width: 50%;
+  /* font-size: 30px; */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: 45vw;
-}
-.mon-text h1 {
-  font-size: 7vh;
-  font-weight: 700;
-}
-.mon-text p {
-  font-size: 3.6vh;
-  align-items: center;
-}
-.monitor {
-  display: flex;
-  align-items: center;
 }
 
-.monitor div {
-  position: absolute;
+/* monitor wala part */
+
+.monitor {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 40%;
 }
 
 .monr-vid {
-  margin-left: 70px;
-  margin-bottom: 170px;
-  overflow: hidden;
-}
-.monr-img {
-  overflow: hidden;
+  display: flex;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+
+  /* -------------------------- */
 }
 
+.monr-img {
+  display: flex;
+  position: absolute;
+}
+
+/* ------------------------------------------------------------------- */
 /* section 4 */
 
 .section4 {
