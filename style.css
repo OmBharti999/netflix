@@ -411,8 +411,10 @@ p.blue-down {
   background-color: grey;
   padding: 0.4rem;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
 
-  text-align: center;
+  /* text-align: center; */
   margin-left: 20vw;
   margin-right: 20vw;
 }
@@ -425,6 +427,12 @@ p.blue-down {
 
 .gg {
   font-size: 16px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.gg span {
+  right: 0;
 }
 
 .fif-bottom {
@@ -470,3 +478,8 @@ a {
 .cla {
   padding-top: 20px;
 }
+
+/* fav icon */
+/* .fa-plus {
+  margin-left: 50%;
+  /* text-align: end; */
