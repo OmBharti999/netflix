@@ -5,6 +5,7 @@
   padding: 0px;
   font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
   /* background-color: rgb(65, 60, 60); */
+  box-sizing: border-box;
 }
 
 .body {
@@ -128,7 +129,7 @@
 }
 
 .search button {
-  height: 106%;
+  height: 98%;
   width: 200px;
   font-size: 25px;
   background-color: rgba(221, 27, 27);
@@ -315,16 +316,15 @@ p.blue-down {
   align-self: center;
   /* align-items: center; */
   min-height: 600px;
+  overflow: hidden;
 }
 .monitor-text {
-  /* font-size: large; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1.6;
 }
 .mon-text {
-  width: 50%;
-  /* font-size: 30px; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -334,23 +334,33 @@ p.blue-down {
 
 .monitor {
   display: flex;
+  flex: 2;
   flex-wrap: wrap;
-
-  width: 40%;
+  position: relative;
+  margin-top: 10vh;
+  margin-right: 10vw;
+  /* align-items: center; */
 }
 
 .monr-vid {
   display: flex;
   position: absolute;
-  margin-top: 40px;
-  margin-left: 50px;
+  line-height: 100%;
+  overflow: hidden;
 
   /* -------------------------- */
 }
+.monr-vid video {
+  margin: 40px 0px 0px 110px;
+  width: 400px;
+  position: relative;
+}
 
 .monr-img {
+  /* box-sizing: border-box; */
   display: flex;
   position: absolute;
+  /* overflow: hidden; */
 }
 
 /* ------------------------------------------------------------------- */
@@ -393,11 +403,16 @@ p.blue-down {
   font-size: 35px;
   margin-bottom: 40px;
 }
+.question {
+  display: flex;
+  flex-direction: column;
+}
 .quest {
   background-color: grey;
-  padding: 10px;
-  font-size: 27px;
-  text-align: left;
+  padding: 0.4rem;
+  font-size: 1rem;
+
+  text-align: center;
   margin-left: 20vw;
   margin-right: 20vw;
 }
