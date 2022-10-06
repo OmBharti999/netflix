@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -19,7 +18,6 @@ body::-webkit-scrollbar {
   flex-wrap: wrap;
   background-color: rgb(65, 60, 60);
   font-family: "Mingzat", "Playfair Display", "Albert Sans", sans-serif;
-  
 }
 
 .head-container {
